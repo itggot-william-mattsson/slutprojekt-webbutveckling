@@ -7,7 +7,7 @@ body {
   width: 100vw;
   margin: 0px;
   padding: 0px;
-  background-color: #51afbc;
+  background-color: #d9d9d9;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(12, 1fr);
   display: grid; }
@@ -22,7 +22,8 @@ body {
 .header {
   grid-column: 1 / 9;
   grid-row: 1 / 2;
-  background-color: #19818f; }
+  background-color: #adadad;
+  text-decoration: none; }
 
 .kundvagn {
   grid-column: 8 / 9;
@@ -42,6 +43,14 @@ body {
   height: 50px;
   margin-top: 8px; }
 
+.backgroundpic {
+  grid-column: 1 / 9;
+  grid-row: 2 / 12; }
+
+.backgroundpic img {
+  width: 100%;
+  height: 100%; }
+
 .menu {
   font-size: 25px;
   color: black;
@@ -49,7 +58,7 @@ body {
   grid-row: span 1;
   grid-column: span 1;
   position: fixed;
-  background-color: rgba(122, 204, 215, 0.719);
+  background-color: rgba(128, 128, 127, 0.719);
   height: 100vh;
   transition: 0.4s linear;
   width: 50vw;
@@ -84,7 +93,7 @@ i.material-icons {
 .popular {
   grid-column: 1 / 12;
   grid-row: 5;
-  background-color: #aee5ed;
+  background-color: #80807f;
   text-align: center;
   vertical-align: middle;
   border: 2px solid black;
@@ -119,7 +128,7 @@ i.material-icons {
 .footer {
   grid-row: 12 / 13;
   grid-column: span 9;
-  background-color: #01535f; }
+  background-color: #adadad; }
 
 .menu ul li a:link, a:visited {
   color: black;
@@ -138,7 +147,7 @@ i.material-icons {
     width: 100vw;
     margin: 0px;
     padding: 0px;
-    background-color: #51afbc;
+    background-color: #d9d9d9;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(12, 1fr);
     display: grid; }
@@ -153,7 +162,11 @@ i.material-icons {
   .header {
     grid-column: 1 / 9;
     grid-row: 1 / 2;
-    background-color: #19818f; }
+    background-color: #adadad;
+    border: 2px solid black; }
+
+  .header h1 a {
+    text-decoration: none; }
 
   .kundvagn {
     grid-column: 8 / 9;
@@ -190,7 +203,7 @@ i.material-icons {
     grid-row: span 1;
     grid-column: span 1;
     position: fixed;
-    background-color: rgba(122, 204, 215, 0.719);
+    background-color: rgba(128, 128, 127, 0.719);
     height: 100vh;
     transition: 0.4s linear;
     width: 50vw;
@@ -225,13 +238,21 @@ i.material-icons {
   .popular {
     grid-column: 1 / 12;
     grid-row: 5;
-    background-color: #aee5ed;
+    background-color: #80807f;
     text-align: center;
     vertical-align: middle;
     border: 2px solid black;
     font-family: Arial;
     font-size: 45px;
     font-weight: bold; }
+
+  .backgroundpic {
+    grid-column: 1 / 12;
+    grid-row: 2 / 12; }
+
+  .backgroundpic img {
+    width: 100%;
+    height: 100%; }
 
   .shoe1 {
     grid-column: 1 / 12;
@@ -266,7 +287,8 @@ i.material-icons {
   .footer {
     grid-row: 12 / 13;
     grid-column: span 9;
-    background-color: #01535f; }
+    background-color: #adadad;
+    border: 2px solid black; }
 
   .menu ul li a:link, a:visited {
     color: black;

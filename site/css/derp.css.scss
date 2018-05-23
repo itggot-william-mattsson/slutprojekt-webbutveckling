@@ -8,7 +8,7 @@ body {
     width: 100vw;
     margin: 0px;
     padding: 0px;
-    background-color: rgb(81, 175, 188);
+    background-color: rgb(217, 217, 217);
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(12, 1fr);
     display: grid;
@@ -25,7 +25,8 @@ body {
 .header {
     grid-column: 1 / 9;
     grid-row: 1 / 2;
-    background-color: rgb(25, 129, 143);
+    background-color: rgb(173, 173, 173);
+    text-decoration: none;
 }
 
 .kundvagn {
@@ -50,6 +51,16 @@ body {
     margin-top: 8px;
 }
 
+.backgroundpic {
+    grid-column: 1 / 9;
+    grid-row: 2 / 12;
+}
+
+.backgroundpic img {
+    width: 100%;
+    height: 100%;
+}
+
 .menu {
     font-size: 25px;
     color: black;
@@ -57,7 +68,7 @@ body {
     grid-row: span 1;
     grid-column: span 1;
     position: fixed;
-    background-color:rgba(122, 204, 215, 0.719);
+    background-color:rgba(128, 128, 127, 0.719);
     height: 100vh;
     transition: 0.4s linear;
     width: 50vw;
@@ -98,7 +109,7 @@ i.material-icons {
 .popular {
     grid-column: 1 / 12;
     grid-row: 5;
-    background-color: rgb(174, 229, 237);
+    background-color: rgb(128, 128, 127);
     text-align: center;
     vertical-align: middle;
     border: 2px solid black;
@@ -136,7 +147,7 @@ i.material-icons {
 .footer {
     grid-row: 12 / 13;
     grid-column: span 9;
-    background-color: rgb(1, 83, 95);
+    background-color: rgb(173, 173, 173);
 }
 
 .menu ul li a:link, a:visited {
@@ -159,7 +170,7 @@ i.material-icons {
         width: 100vw;
         margin: 0px;
         padding: 0px;
-        background-color: rgb(81, 175, 188);
+        background-color: rgb(217, 217, 217);
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: repeat(12, 1fr);
         display: grid;
@@ -176,7 +187,12 @@ i.material-icons {
     .header {
         grid-column: 1 / 9;
         grid-row: 1 / 2;
-        background-color: rgb(25, 129, 143);
+        background-color: rgb(173, 173, 173);
+        border: 2px solid black;
+    }
+
+    .header h1 a {
+        text-decoration: none;
     }
     
     .kundvagn {
@@ -220,7 +236,7 @@ i.material-icons {
         grid-row: span 1;
         grid-column: span 1;
         position: fixed;
-        background-color:rgba(122, 204, 215, 0.719);
+        background-color:rgba(128, 128, 127, 0.719);
         height: 100vh;
         transition: 0.4s linear;
         width: 50vw;
@@ -261,14 +277,24 @@ i.material-icons {
     .popular {
         grid-column: 1 / 12;
         grid-row: 5;
-        background-color: rgb(174, 229, 237);
+        background-color: rgb(128, 128, 127);
         text-align: center;
         vertical-align: middle;
         border: 2px solid black;
         font-family: Arial;
         font-size: 45px;
         font-weight: bold;
-        }
+    }
+
+    .backgroundpic {
+        grid-column: 1 / 12;
+        grid-row: 2 / 12;
+    }
+
+    .backgroundpic img {
+        width: 100%;
+        height: 100%;
+    }
     
     .shoe1 {
         grid-column: 1 / 12;
@@ -308,7 +334,8 @@ i.material-icons {
     .footer {
         grid-row: 12 / 13;
         grid-column: span 9;
-        background-color: rgb(1, 83, 95);
+        background-color: rgb(173, 173, 173);
+        border: 2px solid black;
     }
     
     .menu ul li a:link, a:visited {
