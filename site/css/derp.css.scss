@@ -1,6 +1,8 @@
 body {
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -20,6 +22,7 @@ body {
     text-align: center;
     font-size: 30px;
     color: black;
+    text-decoration: none;
 }  
 
 .header {
@@ -37,7 +40,7 @@ body {
 .kundvagn img {
     width: 50px;
     height: 50px;
-    margin-top: 8px;
+    margin-top: 15px;
 }
 
 .home {
@@ -48,7 +51,7 @@ body {
 .home img {
     width: 50px;
     height: 50px;
-    margin-top: 8px;
+    margin-top: 15px;
 }
 
 .backgroundpic {
@@ -63,6 +66,7 @@ body {
 
 .menu {
     font-size: 25px;
+    font-family: "Arial Black", sans-serif;
     color: black;
     align-self: center;
     grid-row: span 1;
@@ -82,6 +86,7 @@ body {
     align-self: auto;
     grid-row: 1;
     cursor: pointer; 
+    margin-top: 7px;
 }
 
 .show {
@@ -118,32 +123,6 @@ i.material-icons {
     font-weight: bold;
 }
 
-.erbjudande2 {
-    grid-column: 2 / 8;
-    grid-row: 5 / 8;
-    background-color: rgb(174, 229, 237);
-    text-align: center;
-    padding-top: 25px;
-    border: 2px solid black;
-    font-family: Arial;
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.erbjudande3 {
-    grid-column: 2 / 8;
-    grid-row: 9 / 11;
-    background-color:rgb(174, 229, 237);
-    text-align: center;
-    padding-top: 25px;
-    border: 2px solid black;
-    font-family: Arial;
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
 .footer {
     grid-row: 12 / 13;
     grid-column: span 9;
@@ -163,6 +142,8 @@ i.material-icons {
     body {
         background-color: white;
         font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0; 
     }
     
     .container {
@@ -187,12 +168,14 @@ i.material-icons {
     .header {
         grid-column: 1 / 9;
         grid-row: 1 / 2;
-        background-color: rgb(173, 173, 173);
+        background-color: rgb(102, 194, 255);
         border: 2px solid black;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
 
     .header h1 a {
         text-decoration: none;
+        font-size: 34px;
     }
     
     .kundvagn {
@@ -203,7 +186,7 @@ i.material-icons {
     .kundvagn img {
         width: 50px;
         height: 50px;
-        margin-top: 8px;
+        margin-top: 15px;
     }
 
     .home {
@@ -214,29 +197,50 @@ i.material-icons {
     .home img {
         width: 50px;
         height: 50px;
-        margin-top: 8px;
+        margin-top: 15px;
     }
 
-    .info1 {
+    .checkout {
         grid-column: 2 / 8;
-        grid-row: 3 / 7;
-        background-color: gray;
-    }
-
-    .info2 {
-        grid-column: 2 / 8;
-        grid-row: 8 / 11;
+        grid-row: 3 / 11;
         background-color: white;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+
+    .checkout ul li {
+        margin: 30px 0;
+        word-spacing: 90px;
+    }
+    .betala {
+        grid-column: 5 / 8;
+        grid-row: 10 / 11;
+    }
+
+    .betala button {
+        background-color: pink; 
+        border: none;
+        color: black;
+        padding: 12px 43px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 17px;
+        border: 1px solid black;
+        cursor: pointer;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
     }
     
     .menu {
         font-size: 25px;
+        font-family: "Arial Black", sans-serif;
         color: black;
         align-self: center;
         grid-row: span 1;
         grid-column: span 1;
         position: fixed;
-        background-color:rgba(128, 128, 127, 0.719);
+        background-color:rgba(179, 224, 255, 0.719);
         height: 100vh;
         transition: 0.4s linear;
         width: 50vw;
@@ -250,6 +254,7 @@ i.material-icons {
         align-self: auto;
         grid-row: 1;
         cursor: pointer; 
+        margin-top: 7px;
     }
 
     .show {
@@ -265,8 +270,9 @@ i.material-icons {
     }
 
     .welcome {
-        grid-column: 1 / 12;
+        grid-column: 2 / 8;
         grid-row: 2 / 5;
+        border: 2px solid black;
     }
 
     .welcome img {
@@ -277,13 +283,79 @@ i.material-icons {
     .popular {
         grid-column: 1 / 12;
         grid-row: 5;
-        background-color: rgb(128, 128, 127);
+        background-color:rgb(153, 214, 255);
         text-align: center;
         vertical-align: middle;
         border: 2px solid black;
         font-family: Arial;
         font-size: 45px;
         font-weight: bold;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .om {
+        grid-column: 2 / 8;
+        grid-row: 3 / 6;
+        background-color: rgb(204, 235, 255);
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+
+    .checkouttext {
+        grid-column: 2 / 8;
+        grid-row: 2 / 3;
+        font-size: 12px;
+        text-align: center;
+        color: white;
+        text-shadow:
+		-1.5px -1.5px 0 #000,
+		1.5px -1.5px 0 #000,
+		-1.5px 1.5px 0 #000,
+        1.5px 1.5px 0 #000;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .omtext {
+        grid-column: 2 / 8;
+        grid-row: 2 / 3;
+        font-size: 12px;
+        text-align: center;
+        color: white;
+        text-shadow:
+		-1.5px -1.5px 0 #000,
+		1.5px -1.5px 0 #000,
+		-1.5px 1.5px 0 #000,
+        1.5px 1.5px 0 #000;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .hittatext {
+        grid-column: 3 / 7;
+        grid-row: 6 / 7;
+        text-align: center;
+        color: white;
+        text-shadow:
+		-1.5px -1.5px 0 #000,
+		1.5px -1.5px 0 #000,
+		-1.5px 1.5px 0 #000,
+        1.5px 1.5px 0 #000;
+        margin-top: -7px;
+        margin-bottom: -7px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+
+    .hitta {
+        grid-column: 2 / 8;
+        grid-row: 7 / 11;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+
+    .hitta iframe {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
     }
 
     .backgroundpic {
@@ -297,8 +369,9 @@ i.material-icons {
     }
     
     .shoe1 {
-        grid-column: 1 / 12;
+        grid-column: 2 / 8;
         grid-row: 6 / 9;
+        border: 2px solid black;
     }
 
     .shoe1 img {
@@ -308,8 +381,9 @@ i.material-icons {
     }
 
     .shoe2 {
-        grid-column: 1 / 12;
+        grid-column: 2 / 8;
         grid-row: 9 / 12;
+        border: 2px solid black;
     }
 
     .shoe2 img {
@@ -317,24 +391,104 @@ i.material-icons {
         height: 100%;
         cursor: pointer;
     }
-    
-    .erbjudande3 {
+
+    .sko1 {
         grid-column: 2 / 8;
-        grid-row: 9 / 11;
-        background-color:rgb(174, 229, 237);
-        text-align: center;
-        padding-top: 25px;
+        grid-row: 3 / 6;
+        border-radius: 10px;
+    }
+
+    .sko1 img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
         border: 2px solid black;
-        font-family: Arial;
-        font-size: 15px;
-        font-weight: bold;
+    }
+
+    .skoknapp1 {
+        grid-row: 6 / 7;
+        grid-column: 6 / 8;
+    }
+
+    .skoknapp1 button {
+        background-color: white; 
+        border: none;
+        color: black;
+        padding: 5px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin-top: 3px;
+        border: 1px solid black;
         cursor: pointer;
     }
 
+    .skostorlek1 {
+        grid-row: 6 / 7;
+        grid-column: 2 / 5;
+    }
+
+    .sko2 {
+        grid-column: 2 / 8;
+        grid-row: 7 / 10;
+        border-radius: 10px;
+        border: 2px solid black;
+    }
+
+    .sko2 img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .skoknapp2 {
+        grid-row: 10 / 11;
+        grid-column: 6 / 8;
+    }
+
+    .skoknapp2 button {
+        background-color: white; 
+        border: none;
+        color: black;
+        padding: 5px 28px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin-top: px;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+
+    .sell {
+        grid-row: 5 / 8;
+        grid-column: 2 / 8;
+        background-color: lightgrey;
+        border-radius: 10px;
+        border: 1px solid black;
+        font-size: 18px;
+    }
+
+    .selltext {
+        grid-column: 2 / 8;
+        grid-row: 4 / 5;
+        text-align: center;
+        color: white;
+        text-shadow:
+		-1.5px -1.5px 0 #000,
+		1.5px -1.5px 0 #000,
+		-1.5px 1.5px 0 #000,
+        1.5px 1.5px 0 #000;
+        margin-top: -7px;
+        margin-bottom: -7px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    
     .footer {
         grid-row: 12 / 13;
         grid-column: span 9;
-        background-color: rgb(173, 173, 173);
+        background-color: rgb(51, 173, 255);
         border: 2px solid black;
     }
     
@@ -344,7 +498,7 @@ i.material-icons {
     }
     
     .menu ul li a:hover {
-        color: red;
+        color: white;
     }
 }
 
