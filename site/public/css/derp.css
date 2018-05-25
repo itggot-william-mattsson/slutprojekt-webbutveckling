@@ -208,7 +208,7 @@ i.material-icons {
     grid-row: span 1;
     grid-column: span 1;
     position: fixed;
-    background-color: rgba(179, 224, 255, 0.719);
+    background-color: rgba(122, 204, 215, 0.719);
     height: 100vh;
     transition: 0.4s linear;
     width: 50vw;
@@ -257,7 +257,7 @@ i.material-icons {
   .om {
     grid-column: 2 / 8;
     grid-row: 3 / 6;
-    background-color: #ccebff;
+    background-color: #99e6ff;
     border: 2px solid black;
     border-radius: 10px; }
 
@@ -391,7 +391,7 @@ i.material-icons {
   .sell {
     grid-row: 5 / 8;
     grid-column: 2 / 8;
-    background-color: lightgrey;
+    background-color: #99e6ff;
     border-radius: 10px;
     border: 1px solid black;
     font-size: 18px; }
